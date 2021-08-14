@@ -48,7 +48,7 @@ class ViewModelPerson: ObservableObject {
         
         // let personID = CKRecord.ID(recordName: lastPersonRecordID)
         let personRecord = CKRecord(recordType: "Person", recordID: lastPersonRecordID)
-        personRecord["name"] = "qwerty"
+        personRecord["name"] = "lastPerson"
 
         do {
             let recordId = try await database.save(personRecord)
